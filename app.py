@@ -84,4 +84,5 @@ def fasting_recommendation():
     return jsonify({"fasting_plan": fasting_plan})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=10000, debug=True)
+
